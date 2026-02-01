@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>simple fast & secure wordpress hosting -rocket.net</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 187 40"
+						width="187"
+						height="40"
+						fill="none"
+					>
+						<path
+							fill="#24A7CA"
+							fill-rule="evenodd"
+							d="m19.398 0 .087.05.317.188a10.75 10.75 0 0 1 1.703 1.247c.658.59 1.258 1.24 1.791 1.946.399.528.768 1.084 1.102 1.667 1.283 2.23 2.06 4.815 2.06 7.257v6.424l.567.374a7.777 7.777 0 0 1 3.438 6.274v7.943l-1.604-1.173-2.4-1.76-.005-.001v7.248a17.7 17.7 0 0 0 4.168-2.576A18.172 18.172 0 0 0 37.2 21.081c0-7.896-5.003-14.629-11.958-17.09-.461-.752-.98-1.467-1.553-2.138C32.33 3.843 38.8 11.71 38.8 21.08c0 8.342-5.126 15.49-12.346 18.365a18.23 18.23 0 0 1-1.601.554V19.692l-4.654-3.374v20.22H18.6v-20.22l-4.658 3.373v20.307a19.015 19.015 0 0 1-1.486-.507l-.116-.047a19.326 19.326 0 0 1-5.3-3.18A19.806 19.806 0 0 1 0 21.08C0 11.71 6.47 3.843 15.113 1.855a16.86 16.86 0 0 0-1.553 2.138c-6.955 2.46-11.958 9.194-11.958 17.09a18.172 18.172 0 0 0 6.731 14.153 17.677 17.677 0 0 0 4.008 2.444v-7.242l-2.401 1.76-1.601 1.168-.003.006v-7.944a7.79 7.79 0 0 1 2.686-5.702c.237-.205.49-.392.753-.572l.561-.374.005-.005v-6.419c0-2.442.778-5.027 2.06-7.257.336-.583.704-1.14 1.104-1.667a13.688 13.688 0 0 1 1.79-1.946c.526-.47 1.096-.888 1.703-1.248l.313-.185.087-.052ZM12.34 20.74a5.709 5.709 0 0 0-.64.574 6.129 6.129 0 0 0-1.763 4.326v4.47h.002v.08l2.401-1.759v-7.69Zm14.118 0v7.691l2.401 1.759v-.006h.003v-4.543a6.129 6.129 0 0 0-1.762-4.327 5.726 5.726 0 0 0-.642-.573ZM20.199 2.5v11.752l4.654 3.366v-5.263c0-2.655-1.09-5.575-2.757-7.819-.39-.53-.822-1.027-1.292-1.487A10.55 10.55 0 0 0 20.2 2.5Zm-1.598-.002c-.208.173-.41.355-.608.551-.47.46-.903.958-1.294 1.487-1.667 2.244-2.756 5.164-2.756 7.82v5.262l4.658-3.366V2.498Z"
+							clip-rule="evenodd"
+						></path>
+
+						<path
+							class="rocket"
+							fill="#000000"
+							d="M56.432 29.2v-5.273h4.045c.29 0 .503-.01.64-.027l3.097 5.3h3.918l-3.943-5.94c1.16-.494 2.044-1.237 2.65-2.226.605-.99.908-2.185.908-3.584 0-1.963-.632-3.482-1.894-4.558-1.263-1.074-3.055-1.611-5.376-1.611h-7.475V29.2h3.43V29.2Zm4.044-8.293h-4.045v-6.631h4.045c1.297 0 2.287.273 2.97.82.682.545 1.023 1.365 1.023 2.457 0 1.109-.341 1.946-1.024 2.508-.682.564-1.672.846-2.969.846Zm16.896 8.422c1.417 0 2.667-.29 3.75-.87A6.275 6.275 0 0 0 83.658 26c.606-1.058.908-2.278.908-3.661 0-1.365-.302-2.573-.908-3.623a6.299 6.299 0 0 0-2.534-2.444c-1.084-.58-2.334-.87-3.751-.87-1.433 0-2.697.29-3.789.87a6.282 6.282 0 0 0-2.547 2.444c-.606 1.05-.909 2.258-.909 3.623 0 1.383.303 2.603.909 3.66a6.255 6.255 0 0 0 2.547 2.458c1.092.58 2.355.871 3.789.871Zm0-2.79c-1.16 0-2.1-.384-2.816-1.152-.717-.768-1.075-1.767-1.075-2.996 0-1.228.358-2.227 1.075-2.995.717-.768 1.655-1.152 2.816-1.152 1.127 0 2.048.384 2.766 1.152.715.768 1.074 1.767 1.074 2.994 0 1.23-.359 2.229-1.075 2.997-.717.768-1.638 1.152-2.765 1.152Zm15.744 2.79c1.331 0 2.5-.239 3.507-.717a6.064 6.064 0 0 0 2.432-2.048l-2.074-1.715c-.818 1.075-2.048 1.612-3.686 1.612-1.109 0-2.01-.375-2.7-1.126-.692-.75-1.038-1.74-1.038-2.97 0-1.194.346-2.167 1.038-2.918.69-.75 1.591-1.126 2.7-1.126 1.468 0 2.663.503 3.584 1.51l2.023-1.92c-.615-.802-1.413-1.42-2.394-1.857-.981-.434-2.095-.651-3.34-.651-1.366 0-2.573.29-3.623.87a6.191 6.191 0 0 0-2.458 2.457c-.588 1.059-.883 2.279-.883 3.661 0 1.366.29 2.573.87 3.622a6.128 6.128 0 0 0 2.445 2.446c1.05.58 2.25.87 3.597.87Zm12.237-.128v-3.79l2.099-2.2 3.712 5.99h3.968l-5.376-8.397 5.069-5.273h-3.84l-5.632 5.682V10.204h-3.328V29.2h3.328Zm17.152.128c1.194 0 2.283-.205 3.264-.614a6.92 6.92 0 0 0 2.496-1.742l-1.792-1.868a4.92 4.92 0 0 1-1.677 1.139 5.21 5.21 0 0 1-2.009.397c-1.008 0-1.857-.277-2.548-.832-.691-.555-1.148-1.318-1.37-2.292h10.112c.018-.221.026-.554.026-.998 0-2.252-.55-4.002-1.651-5.248-1.101-1.246-2.743-1.868-4.928-1.868-1.348 0-2.552.294-3.609.882a6.252 6.252 0 0 0-2.471 2.471c-.589 1.059-.883 2.27-.883 3.634 0 1.367.29 2.574.87 3.623a6.088 6.088 0 0 0 2.47 2.446c1.067.58 2.3.87 3.7.87Zm3.456-8.038h-7.168c.154-1.024.559-1.831 1.216-2.42.656-.588 1.472-.883 2.444-.883 1.042 0 1.878.299 2.51.896.631.597.964 1.4.998 2.407Zm10.496 8.064c1.194 0 2.338-.334 3.43-1l-.768-2.508c-.785.376-1.434.564-1.946.564-.477 0-.836-.133-1.074-.398-.24-.264-.359-.712-.359-1.343V18.5h3.917v-2.432h-3.917v-3.763h-3.303v3.763h-1.945l.025 2.432h1.92v6.759c0 1.348.376 2.368 1.127 3.058.751.692 1.715 1.038 2.893 1.038Zm6.451.05c.324 0 .597-.114.819-.345.222-.23.333-.508.333-.832 0-.324-.111-.597-.333-.82a1.106 1.106 0 0 0-.819-.332c-.324 0-.593.11-.806.333a1.14 1.14 0 0 0-.321.819c0 .341.107.623.32.845.214.222.483.332.807.332Zm6.707-.204v-7.22c.119-1.416.593-2.542 1.421-3.378.828-.837 1.933-1.264 3.315-1.28 1.246 0 2.219.358 2.918 1.074.7.718 1.05 1.707 1.05 2.97v7.834h1.741v-8.245c0-1.62-.457-2.896-1.369-3.826-.914-.93-2.172-1.395-3.777-1.395-1.28.016-2.367.29-3.263.819-.896.53-1.575 1.314-2.036 2.354v-3.121H147.9V29.2h1.715Zm20.301.05c1.092 0 2.095-.191 3.008-.575a6.682 6.682 0 0 0 2.343-1.625l-.974-.974a5.454 5.454 0 0 1-1.894 1.306 6.1 6.1 0 0 1-2.38.461c-1.383 0-2.544-.44-3.482-1.319-.939-.878-1.468-2.034-1.588-3.468h11.188c.085-2.236-.418-4.015-1.51-5.338-1.093-1.322-2.68-1.984-4.762-1.984-1.263 0-2.398.286-3.405.858a6.12 6.12 0 0 0-2.368 2.406c-.572 1.033-.857 2.197-.857 3.494 0 1.315.285 2.484.857 3.508a6.14 6.14 0 0 0 2.368 2.394c1.007.57 2.159.857 3.456.857Zm4.685-7.526h-9.652c.137-1.383.658-2.491 1.562-3.328.905-.836 2.031-1.254 3.38-1.254 1.365 0 2.47.414 3.314 1.242.846.828 1.311 1.94 1.396 3.34Zm8.908 7.552c1.059-.034 2.048-.366 2.97-.998l-.512-1.306c-.802.478-1.544.718-2.228.718-1.228 0-1.842-.828-1.842-2.484v-7.706h4.352v-1.356l-4.352.026v-3.458h-1.715v3.456h-1.946l.025 1.33h1.92v7.989c0 1.262.299 2.209.896 2.841.598.631 1.408.947 2.432.947v.001Z"
+						></path>
+					</svg>
+				</div>
+				<div class="nav-bar">
+					<ul>
+						<li>
+							<a href="#"
+								>Features
+								<svg
+									padding-top="5px"
+									class="down-arrow"
+									width="20"
+									height="20"
+									viewBox="0 0 16 16"
+									fill="black"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M4.64645 6.64645C4.84171 6.45118 5.15829 6.45118 5.35355 6.64645L8 9.29289L10.6464 6.64645C10.8417 6.45118 11.1583 6.45118 11.3536 6.64645C11.5488 6.84171 11.5488 7.15829 11.3536 7.35355L8.70711 10C8.51184 10.1953 8.19526 10.1953 8 10L5.35355 7.35355C5.15829 7.15829 4.84171 7.15829 4.64645 6.96302C4.45118 6.76776 4.45118 6.45118 4.64645 6.64645Z"
+										fill="#333333"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Solutions
+								<svg
+									class="down-arrow"
+									width="20"
+									height="20"
+									viewBox="0 0 16 16"
+									fill="black"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M4.64645 6.64645C4.84171 6.45118 5.15829 6.45118 5.35355 6.64645L8 9.29289L10.6464 6.64645C10.8417 6.45118 11.1583 6.45118 11.3536 6.64645C11.5488 6.84171 11.5488 7.15829 11.3536 7.35355L8.70711 10C8.51184 10.1953 8.19526 10.1953 8 10L5.35355 7.35355C5.15829 7.15829 4.84171 7.15829 4.64645 6.96302C4.45118 6.76776 4.45118 6.45118 4.64645 6.64645Z"
+										fill="#333333"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Resources
+								<svg
+									class="down-arrow"
+									width="20"
+									height="20"
+									viewBox="0 0 16 16"
+									fill="black"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M4.64645 6.64645C4.84171 6.45118 5.15829 6.45118 5.35355 6.64645L8 9.29289L10.6464 6.64645C10.8417 6.45118 11.1583 6.45118 11.3536 6.64645C11.5488 6.84171 11.5488 7.15829 11.3536 7.35355L8.70711 10C8.51184 10.1953 8.19526 10.1953 8 10L5.35355 7.35355C5.15829 7.15829 4.84171 7.15829 4.64645 6.96302C4.45118 6.76776 4.45118 6.45118 4.64645 6.64645Z"
+										fill="#333333"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#"> pricing</a>
+						</li>
+					</ul>
+				</div>
+				<div class="auth-buttons">
+					<button class="login-button">Log in</button>
+					<button class="signup-button">Sign Up</button>
+				</div>
+			</div>
+		</header>
+
+		<!-- banner -->
+		<section class="banner">
+			<div class="container">
+				<div class="right-block">
+					<h1>Fast & Secure Hosting for WordPress</h1>
+					<p class="banner-para">
+						Grow your business with lightning-fast, secure and fully-optimized
+						websites that are easy to set up & manage.
+					</p>
+					<ul>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="orange"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							Free SSL, CDN, WAF
+						</li>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="none"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							Free Malware Protection
+						</li>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="orange"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									background-color="orange"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							24x7 Expert Support & Unlimited Free Migrations
+						</li>
+					</ul>
+					<button class="started-button">See plans & pricing</button>
+					<p class="saki">chat with us</p>
+				</div>
+				<div class="left-block">
+					<img class="bg-img" src="/img/saki.svg" alt="img-1" />
+					<img class="top-img" src="/img/saki-2.svg" alt="img-2" />
+				</div>
+			</div>
+		</section>
+
+		<!-- managed -->
+		<section class="managed">
+			<div class="container">
+				<div class="right">
+					<h1>
+						Top-tier agencies and online businesses choose Rocket.net as their
+						trusted managed WordPress hosting provider.
+					</h1>
+				</div>
+				<div class="left">
+					<ul class="logo-list">
+						<li>
+							<img
+								width="150"
+								height="15"
+								src="https://rocket.net/wp-content/uploads/2022/12/Logo-Mediavine.svg"
+								class="attachment-full size-full entered lazyloaded"
+								alt=""
+								decoding="async"
+								style="height: 18px"
+								data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/Logo-Mediavine.svg"
+								data-ll-status="loaded"
+							/>
+						</li>
+						<li>
+							<img
+								width="100"
+								height="28"
+								src="https://rocket.net/wp-content/uploads/2022/12/Logo-Atarim.svg"
+								class="attachment-full size-full entered lazyloaded"
+								alt=""
+								decoding="async"
+								style="height: 30px"
+								data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/Logo-Atarim.svg"
+								data-ll-status="loaded"
+							/>
+						</li>
+						<li>
+							<img
+								width="200"
+								height="50"
+								src="https://rocket.net/wp-content/uploads/2022/12/BTBLogo-gray.svg"
+								class="attachment-full size-full entered lazyloaded"
+								alt=""
+								decoding="async"
+								style="height: 45px"
+								data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/BTBLogo-gray.svg"
+								data-ll-status="loaded"
+							/>
+						</li>
+						<li>
+							<img
+								width="66"
+								height="40"
+								src="https://rocket.net/wp-content/uploads/2022/12/Logo-ZiffDavis.svg"
+								class="attachment-full size-full entered lazyloaded"
+								alt=""
+								decoding="async"
+								style="height: 40px"
+								data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/Logo-ZiffDavis.svg"
+								data-ll-status="loaded"
+							/>
+						</li>
+						<li>
+							<img
+								width="149"
+								height="46"
+								src="https://rocket.net/wp-content/uploads/2024/03/Berkeley-Logo.svg"
+								class="attachment-full size-full entered lazyloaded"
+								alt=""
+								decoding="async"
+								style="height: 46px"
+								data-lazy-src="https://rocket.net/wp-content/uploads/2024/03/Berkeley-Logo.svg"
+								data-ll-status="loaded"
+							/>
+						</li>
+						<li>
+							<img
+								width="127"
+								height="25"
+								src="https://rocket.net/wp-content/uploads/2024/10/aioseo.svg"
+								class="attachment-full size-full entered lazyloaded"
+								alt=""
+								decoding="async"
+								style="height: 31px"
+								data-lazy-src="https://rocket.net/wp-content/uploads/2024/10/aioseo.svg"
+								data-ll-status="loaded"
+							/>
+						</li>
+						<li>
+							<img
+								width="188"
+								height="42"
+								src="https://rocket.net/wp-content/uploads/2023/01/Logo-Bootstrap.svg"
+								class="attachment-full size-full entered lazyloaded"
+								alt=""
+								decoding="async"
+								style="height: 40px"
+								data-lazy-src="https://rocket.net/wp-content/uploads/2023/01/Logo-Bootstrap.svg"
+								data-ll-status="loaded"
+							/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- solution -->
+		<section class="section">
+			<div class="container">
+				<h2>TRUE ALL-IN-ONE WORDPRESS HOSTING SOLUTION</h2>
+				<div class="lined">
+					<hr />
+				</div>
+				<h3>
+					Built to win. Powerful WordPress hosting for a competitive edge.
+				</h3>
+				<p>
+					Focus on growing your business and creating content while we focus on
+					keeping your websites fast and secure.
+				</p>
+				<div class="line">
+					<hr />
+				</div>
+				<div class="boxes">
+					<div class="card">
+						<img
+							width="24"
+							height="24"
+							fill="#white"
+							background-color="orange"
+							src="https://rocket.net/wp-content/uploads/2022/11/rocket.svg"
+							class="attachment-full size-full entered lazyloaded"
+							alt="Rocket Alt"
+							decoding="async"
+							data-lazy-src="https://rocket.net/wp-content/uploads/2022/11/rocket.svg"
+							data-ll-status="loaded"
+						/>
+						<h4>Simple & Easy to Use</h4>
+						<p class="sakib">
+							Manage all your websites in a single user-friendly dashboard that
+							is feature packed, yet very easy to use.
+						</p>
+						<a href="/features/easy-wordpress-hosting/" class="linked">
+							How easy?
+							<i class="arrow">
+								<svg
+									width="24"
+									height="24"
+									fill="none"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill="currentColor"
+										d="M8.601 17.601a1.25 1.25 0 0 0 1.768 1.768l-1.768-1.768ZM15.971 12l.883.884a1.25 1.25 0 0 0 0-1.768l-.883.884Zm-5.602-7.37A1.25 1.25 0 0 0 8.601 6.4L10.37 4.63Zm0 14.74 6.485-6.486-1.767-1.768L8.6 17.601l1.768 1.768Zm6.485-8.254L10.37 4.631 8.601 6.399l6.486 6.485 1.767-1.768Z"
+									></path>
+								</svg>
+							</i>
+						</a>
+					</div>
+					<div class="card">
+						<img
+							width="24"
+							height="24"
+							src="https://rocket.net/wp-content/uploads/2022/11/rocket.svg"
+							class="attachment-full size-full entered lazyloaded"
+							alt="Rocket Alt"
+							decoding="async"
+							data-lazy-src="https://rocket.net/wp-content/uploads/2022/11/rocket.svg"
+							data-ll-status="loaded"
+						/>
+						<h4>Lightning Fast Speed</h4>
+						<p class="sakib">
+							Host the fastest WordPress websites that are pre-configured for
+							maximum speed, helping you get higher conversions & SEO scores.
+						</p>
+						<a href="/features/fastest-wordpress-hosting/" class="linked">
+							How fast?
+							<i class="arrow">
+								<svg
+									width="24"
+									height="24"
+									fill="none"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill="currentColor"
+										d="M8.601 17.601a1.25 1.25 0 0 0 1.768 1.768l-1.768-1.768ZM15.971 12l.883.884a1.25 1.25 0 0 0 0-1.768l-.883.884Zm-5.602-7.37A1.25 1.25 0 0 0 8.601 6.4L10.37 4.63Zm0 14.74 6.485-6.486-1.767-1.768L8.6 17.601l1.768 1.768Zm6.485-8.254L10.37 4.631 8.601 6.399l6.486 6.485 1.767-1.768Z"
+									></path>
+								</svg>
+							</i>
+						</a>
+					</div>
+					<div class="card">
+						<img
+							width="24"
+							height="24"
+							src="https://rocket.net/wp-content/uploads/2022/11/rocket.svg"
+							class="attachment-full size-full entered lazyloaded"
+							alt="Rocket Alt"
+							decoding="async"
+							data-lazy-src="https://rocket.net/wp-content/uploads/2022/11/rocket.svg"
+							data-ll-status="loaded"
+						/>
+						<h4>Always-on Security</h4>
+						<p class="sakib">
+							Your websites are always online and safe from cyber attacks thanks
+							to our enterprise-level WordPress security configurations.
+						</p>
+						<a href="/features/secure-wordpress-hosting/" class="linked">
+							How secure?
+							<i class="arrow">
+								<svg
+									width="24"
+									height="24"
+									fill="none"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill="currentColor"
+										d="M8.601 17.601a1.25 1.25 0 0 0 1.768 1.768l-1.768-1.768ZM15.971 12l.883.884a1.25 1.25 0 0 0 0-1.768l-.883.884Zm-5.602-7.37A1.25 1.25 0 0 0 8.601 6.4L10.37 4.63Zm0 14.74 6.485-6.486-1.767-1.768L8.6 17.601l1.768 1.768Zm6.485-8.254L10.37 4.631 8.601 6.399l6.486 6.485 1.767-1.768Z"
+									></path>
+								</svg>
+							</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- wordpress -->
+		<section class="wordpress">
+			<div class="container">
+				<h4>MAXIMUM WORDPRESS</h4>
+				<h2>
+					Powering the world's top <br />
+					websites, blogs, and shops.
+				</h2>
+				<ul class="tap-loge">
+					<li>
+						<button type="button" class="king">WordPress Publisher</button>
+					</li>
+					<li><button type="button">Agency Hosting</button></li>
+					<li><button type="button">eCommerce / WooCommerce</button></li>
+					<li><button type="button">Enterprise</button></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- card -->
+		<section class="card">
+			<div class="boxes">
+				<div class="left-box">
+					<h2>Did we tell you Rocket.net is fast already?</h2>
+					<p class="para-1">
+						Based on 20+ years in the hosting industry, Rocket.net was built
+						from the ground up to provide our customers the best experience
+						possible.
+					</p>
+					<p class="para-2">Simple. Fast. Secure.</p>
+					<p class="para-1">
+						There’s good reason why we’re the fastest WordPress hosting in the
+						world, come and experience the difference for yourself!
+					</p>
+				</div>
+				<div class="right-box">
+					<img
+						width="505"
+						height="392"
+						src="https://rocket.net/wp-content/uploads/2022/12/TTFB-Chart-Comparison.svg"
+						class="attachment-tab-lg size-tab-lg entered lazyloaded"
+						alt=""
+						decoding="async"
+						data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/TTFB-Chart-Comparison.svg"
+						data-ll-status="loaded"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- develper -->
+		<section class="developer">
+			<div class="container">
+				<div class="left-box">
+					<h2>Industry-leading Customer Support</h2>
+					<p class="dev-para">
+						Rocket is here for you when you really need it, our support team
+						always has your back. We’ll help with migrations and fixing your
+						website when the need arises.
+					</p>
+					<div class="img">
+						<img
+							width="401"
+							height="246"
+							src="https://rocket.net/wp-content/uploads/2022/12/Support-Small-min-401x246.png"
+							class="attachment-tab-sm size-tab-sm entered lazyloaded"
+							alt=""
+							decoding="async"
+							data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/Support-Small-min-401x246.png"
+							data-ll-status="loaded"
+						/>
+					</div>
+				</div>
+
+				<div class="right-box">
+					<h3>Rocket has you covered...</h3>
+					<p class="dev-par">
+						What our competition doesn’t want you to know, Rocket provides the
+						most powerful WordPress hosting solution with everything included
+					</p>
+					<p class="dev">
+						<span>Try Rocket now</span> with a 30-day money-back guarantee and
+						$1 special intro pricing.
+					</p>
+					<div class="img-2">
+						<img
+							src="https://rocket.net/wp-content/uploads/2022/12/Features-4.svg"
+							class="attachment-tab-md size-tab-md entered lazyloaded"
+							alt=""
+							decoding="async"
+							data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/Features-4.svg"
+							data-ll-status="loaded"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Period -->
+		<section class="hosting">
+			<div class="container">
+				<div class="lefts">
+					<p class="dev-p">
+						Every hosting company claims the exact same thing, we'll prove it!
+					</p>
+					<h2>Rocket.net is the Fastest. Period.</h2>
+					<p class="dev-sakib">
+						A fast WordPress website can help you sell more products, retain
+						your site visitors, improve your search ranking, and bolster you
+						brand’s reputation.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Industry -->
+		<section>
+			<div class="industry">
+				<div class="boxes">
+					<div class="box-1">
+						<p class="dec-2">
+							OUR TEAM IS ALWAYS READY TO HELP WITH ALL YOUR NEEDS
+						</p>
+						<h2>Industry Leading Live Support - 24/7</h2>
+						<p class="dec-1">
+							We always put our customers first, from product planning to every
+							single chat and ticket. With 20+ years of hosting experience,
+							we’ll make sure you have a fantastic experience.
+						</p>
+						<ul>
+							<li>
+								<svg
+									width="24"
+									height="24"
+									fill="orange"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill="#FFA500"
+										fill-rule="evenodd"
+										d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+										clip-rule="evenodd"
+									></path>
+								</svg>
+								Helping you solve any problems
+							</li>
+							<li>
+								<svg
+									width="24"
+									height="24"
+									fill="none"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill="#FFA500"
+										fill-rule="evenodd"
+										d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+										clip-rule="evenodd"
+									></path>
+								</svg>
+								Instant response time via live chat
+							</li>
+							<li>
+								<svg
+									width="24"
+									height="24"
+									fill="orange"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill="#FFA500"
+										fill-rule="evenodd"
+										background-color="orange"
+										d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+										clip-rule="evenodd"
+									></path>
+								</svg>
+								Prefer email or phone? No problem!
+							</li>
+							<li>
+								<svg
+									width="24"
+									height="24"
+									fill="orange"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill="#FFA500"
+										fill-rule="evenodd"
+										background-color="orange"
+										d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+										clip-rule="evenodd"
+									></path>
+								</svg>
+								Don't be surprised if the CEO jumps in to help
+							</li>
+						</ul>
+						<p class="saki">
+							chat with us
+							<svg
+								width="24"
+								height="24"
+								class="point"
+								fill="none"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="currentColor"
+									d="M8.601 17.601a1.25 1.25 0 0 0 1.768 1.768l-1.768-1.768ZM15.971 12l.883.884a1.25 1.25 0 0 0 0-1.768l-.883.884Zm-5.602-7.37A1.25 1.25 0 0 0 8.601 6.4L10.37 4.63Zm0 14.74 6.485-6.486-1.767-1.768L8.6 17.601l1.768 1.768Zm6.485-8.254L10.37 4.631 8.601 6.399l6.486 6.485 1.767-1.768Z"
+								></path>
+							</svg>
+						</p>
+					</div>
+					<div class="box-2">
+						<img
+							width="440"
+							height="256"
+							src="https://rocket.net/wp-content/uploads/2023/08/Livechat-Clean.svg"
+							class="saki-2"
+							alt=""
+							decoding="async"
+						/>
+						<img
+							width="567"
+							height="580"
+							src="https://rocket.net/wp-content/uploads/2022/12/Orbit-BottomRight-Blue2.svg"
+							class="saki-3"
+							alt=""
+							decoding="async"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- management -->
+		<section class="Management">
+			<div class="container">
+				<div class="left-box">
+					<img
+						width="520"
+						height="236"
+						src="https://rocket.net/wp-content/uploads/2023/02/Site-List.svg"
+						class="big-img"
+						alt=""
+						decoding="async"
+						data-lazy-src="https://rocket.net/wp-content/uploads/2023/02/Site-List.svg"
+						data-ll-status="loaded"
+					/>
+					<img
+						width="567"
+						height="580"
+						src="https://rocket.net/wp-content/uploads/2022/12/Orbit-Bottom-Grey1.svg"
+						class="short-img"
+						alt=""
+						decoding="async"
+						data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/Orbit-Bottom-Grey1.svg"
+						data-ll-status="loaded"
+					/>
+				</div>
+				<div class="right-box">
+					<p class="dec-1">Easy to use</p>
+					<h2>Simpler WordPress Website Management</h2>
+					<p class="dec-2">
+						Easily manage all of your WordPress websites in our intuitive,
+						user-friendly interface designed to maximize your productivity,
+						minimize friction and help you succeed.
+					</p>
+					<ul>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="orange"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							User-friendly Dashboard
+						</li>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="none"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							Usage & performance analytics
+						</li>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="orange"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									background-color="orange"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							Collaborations
+						</li>
+					</ul>
+					<p class="saki">
+						Simply Powerful
+						<svg
+							width="24"
+							height="24"
+							class="point"
+							fill="none"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill="currentColor"
+								d="M8.601 17.601a1.25 1.25 0 0 0 1.768 1.768l-1.768-1.768ZM15.971 12l.883.884a1.25 1.25 0 0 0 0-1.768l-.883.884Zm-5.602-7.37A1.25 1.25 0 0 0 8.601 6.4L10.37 4.63Zm0 14.74 6.485-6.486-1.767-1.768L8.6 17.601l1.768 1.768Zm6.485-8.254L10.37 4.631 8.601 6.399l6.486 6.485 1.767-1.768Z"
+							></path>
+						</svg>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Security -->
+		<section class="security">
+			<div class="container">
+				<div class="pack-1">
+					<div class="para-1">PEACE OF MIND.</div>
+					<div class="para-2">Total Security</div>
+					<div class="dec">
+						Rocket.net’s secure WordPress hosting takes WordPress protection to
+						the highest level with enterprise-level security solutions to keep
+						your websites safe and always online.
+					</div>
+					<ul>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="orange"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							Proactive protection
+						</li>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="none"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							Pre-configured & optimized
+						</li>
+						<li>
+							<svg
+								width="24"
+								height="24"
+								fill="orange"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill="#FFA500"
+									fill-rule="evenodd"
+									background-color="orange"
+									d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.177-12.653a1 1 0 1 0-1.465-1.36l-5.439 5.857-1.985-2.137a1 1 0 1 0-1.465 1.36l2.735 2.947a1 1 0 0 0 1.601-.184l6.018-6.483Z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							Real-time malware scanning & removal
+						</li>
+					</ul>
+					<div class="button">
+						completely secure
+						<svg
+							width="24"
+							height="24"
+							class="point"
+							fill="none"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill="currentColor"
+								d="M8.601 17.601a1.25 1.25 0 0 0 1.768 1.768l-1.768-1.768ZM15.971 12l.883.884a1.25 1.25 0 0 0 0-1.768l-.883.884Zm-5.602-7.37A1.25 1.25 0 0 0 8.601 6.4L10.37 4.63Zm0 14.74 6.485-6.486-1.767-1.768L8.6 17.601l1.768 1.768Zm6.485-8.254L10.37 4.631 8.601 6.399l6.486 6.485 1.767-1.768Z"
+							></path>
+						</svg>
+					</div>
+				</div>
+				<div class="pack-2">
+					<img
+						width="600"
+						height="344"
+						src="https://rocket.net/wp-content/uploads/2022/12/Events-Malware.svg"
+						class="img-1"
+						alt=""
+						decoding="async"
+						data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/Events-Malware.svg"
+						data-ll-status="loaded"
+					/>
+					<img
+						width="567"
+						height="580"
+						src="https://rocket.net/wp-content/uploads/2022/12/Orbit-BottomRight-Orange1.svg"
+						class="img-2"
+						alt=""
+						decoding="async"
+						data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/Orbit-BottomRight-Orange1.svg"
+						data-ll-status="loaded"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!--  Different -->
+		<section class="different">
+			<div class="container">
+				<div class="box-1">
+					<div class="dec-1">Why Rocket.net is Different</div>
+					<div class="dec-2">What our customers have to say...</div>
+				</div>
+				<div class="box-2">
+					<button type="button" class="img-1" disabled="">
+						<svg
+							width="60"
+							height="50"
+							fill="black"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill="black"
+								d="M15.399 6.399A1.25 1.25 0 1 0 13.63 4.63l1.768 1.768ZM8.029 12l-.883-.884a1.25 1.25 0 0 0 0 1.768L8.029 12Zm5.602 7.37a1.25 1.25 0 0 0 1.768-1.769L13.63 19.37Zm0-14.74-6.485 6.486 1.767 1.768L15.4 6.399 13.63 4.63Zm-6.485 8.254 6.485 6.485 1.768-1.768-6.486-6.485-1.767 1.768Z"
+							></path>
+						</svg>
+					</button>
+					<button type="button" class="img-2">
+						<svg
+							width="60"
+							height="50"
+							fill="none"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill="currentColor"
+								d="M8.601 17.601a1.25 1.25 0 0 0 1.768 1.768l-1.768-1.768ZM15.971 12l.883.884a1.25 1.25 0 0 0 0-1.768l-.883.884Zm-5.602-7.37A1.25 1.25 0 0 0 8.601 6.4L10.37 4.63Zm0 14.74 6.485-6.486-1.767-1.768L8.6 17.601l1.768 1.768Zm6.485-8.254L10.37 4.631 8.601 6.399l6.486 6.485 1.767-1.768Z"
+							></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="line">
+				<hr />
+			</div>
+			<div class="boxes">
+				<div class="box-1">
+					<div class="title">
+						<svg
+							width="128"
+							height="24"
+							viewBox="0 0 128 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect width="24" height="24" rx="4" fill="#00B67A"></rect>
+							<rect x="26" width="24" height="24" rx="4" fill="#00B67A"></rect>
+							<rect
+								x="51.998"
+								width="24"
+								height="24"
+								rx="4"
+								fill="#00B67A"
+							></rect>
+							<rect x="78" width="24" height="24" rx="4" fill="#00B67A"></rect>
+							<rect x="104" width="24" height="24" rx="4" fill="#00B67A"></rect>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M13.975 10.1H20.4l-5.175 3.75-3.2 2.3-5.2 3.75L8.8 13.85 3.6 10.1h6.425L12 4.05l1.975 6.05Zm1.675 5.15-3.65.924 5.175 3.776-1.525-4.7ZM39.977 10.1h6.425l-5.175 3.75-3.2 2.3-5.2 3.75 1.975-6.05-5.2-3.75h6.425l1.975-6.05 1.975 6.05Zm1.675 5.15-3.65.925 5.175 3.775-1.525-4.7ZM65.975 10.1H72.4l-5.175 3.75-3.2 2.3-5.2 3.75 1.975-6.05-5.2-3.75h6.425L64 4.05l1.975 6.05Zm1.675 5.15-3.65.924 5.175 3.776-1.525-4.7ZM91.975 10.1H98.4l-5.175 3.75-3.2 2.3-5.2 3.75 1.975-6.05-5.2-3.75h6.425L90 4.05l1.975 6.05Zm1.675 5.15-3.65.924 5.175 3.776-1.525-4.7ZM117.975 10.1h6.425l-5.175 3.75-3.2 2.3-5.2 3.75 1.975-6.05-5.2-3.75h6.425L116 4.05l1.975 6.05Zm1.675 5.15-3.65.925 5.175 3.775-1.525-4.7Z"
+								fill="#fff"
+							></path>
+						</svg>
+						<p class="topic-1">
+							After testing all So-Called Premium WordPress Hosting, I finally
+							Feel Safe at Rocket. If you are looking for something simple yet
+							powerful and blazing fast, Rocket is for you.
+						</p>
+						<p class="topic-2">
+							I have hosted 10+ Clients So FAR and they Love the performance of
+							their website in Frontend as well as backend.
+						</p>
+					</div>
+					<div class="swp-slides">
+						<div class="ath">
+							<img
+								width="54"
+								height="54"
+								src="https://rocket.net/wp-content/uploads/2022/12/rahul-singh-54x54.png"
+								class="attachment-avatar size-avatar entered lazyloaded"
+								alt="Rahul Singh Rocket.net Review"
+								decoding="async"
+								data-lazy-srcset="https://rocket.net/wp-content/uploads/2022/12/rahul-singh-54x54.png 54w, https://rocket.net/wp-content/uploads/2022/12/rahul-singh.png 73w"
+								data-lazy-sizes="(max-width: 54px) 100vw, 54px"
+								data-lazy-src="https://rocket.net/wp-content/uploads/2022/12/rahul-singh-54x54.png"
+								data-ll-status="loaded"
+								sizes="(max-width: 54px) 100vw, 54px"
+								srcset="
+									https://rocket.net/wp-content/uploads/2022/12/rahul-singh-54x54.png 54w,
+									https://rocket.net/wp-content/uploads/2022/12/rahul-singh.png       73w
+								"
+							/>
+							<div class="ath-name">Rahul Singh</div>
+							<div class="ath-postion">CEO, Fix Web Vitals</div>
+						</div>
+					</div>
+					<div class="box-1"></div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
