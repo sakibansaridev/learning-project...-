@@ -1,2 +1,2 @@
 # learning-project...-
-This is my learning project and useing HTML And CSS.....?
+This is my learning project for using HTML And CSS.....?
